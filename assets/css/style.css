@@ -319,7 +319,7 @@ template {
 /* xs */
 /* xx */
 /* ux */
-.services__container, .experience__container, .page-header__grid {
+.team__container, .services__container, .experience__container, .page-header__grid {
   max-width: 1360px;
   margin-right: auto;
   margin-left: auto;
@@ -714,6 +714,38 @@ a {
   color: #ffffff;
   line-height: 1.44;
 }
+
+.team {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.team-content {
+  background-color: #f5f5fa;
+}
+.team__page-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24a3ff;
+}
+.team__description {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 50px;
+  background: -o-linear-gradient(359.87deg, #F0145A 0.84%, #EF8080 99.96%);
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.team__name {
+  color: #b3b3ba;
+  font-size: 18px;
+  line-height: 21px;
+}
 @media (min-width: 768px) {
   .page-header::before {
     content: "";
@@ -803,6 +835,7 @@ a {
   }
   .slider__indicator {
     display: none;
+    margin-top: 20px;
   }
   .services__title {
     width: -webkit-max-content;
