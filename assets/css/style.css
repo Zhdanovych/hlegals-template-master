@@ -727,21 +727,29 @@ a {
   color: #ffffff;
   line-height: 1.44;
 }
-
-.team {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
 .team-content {
   background-color: #f5f5fa;
-  padding: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 40px;
+}
+.team-content__image {
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 .team__item {
-  padding-top: 40px;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 .team__page-link {
   position: relative;
@@ -763,9 +771,6 @@ a {
   background-size: contain;
 }
 .team__description {
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 50px;
   background: -o-linear-gradient(359.87deg, #F0145A 0.84%, #EF8080 99.96%);
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
@@ -875,6 +880,22 @@ a {
     width: -moz-max-content;
     width: max-content;
   }
+  .team {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .team-content {
+    gap: 40px;
+  }
+  .team__item {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .team__description {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 50px;
+  }
 }
 @media (min-width: 1280px) {
   .services {
@@ -933,6 +954,35 @@ a {
     margin-bottom: 20px;
     font-size: 18px;
   }
+  .team {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .team-content {
+    gap: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .team__item {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+  .team__name {
+    padding-top: 10px;
+  }
+}
+@media (max-width: 991.8px) and (min-width: 768px) {
+  .team__description {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 45px;
+  }
 }
 @media (max-width: 767.8px) {
   .page-header__grid {
@@ -984,5 +1034,13 @@ a {
   }
   .service-item__title {
     font-size: 18px;
+  }
+  .team-content__image {
+    display: none;
+  }
+  .team__description {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
   }
 }
