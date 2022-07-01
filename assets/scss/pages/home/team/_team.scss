@@ -42,6 +42,11 @@
       display: none;
     }
   }
+  &-content__image-picture {
+    @include md-sm {
+      border-radius: 12px 12px 12px 12px;
+    }
+  }
   &__item {
     flex-basis: 0;
     flex-grow: 2;

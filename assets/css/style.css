@@ -1002,6 +1002,9 @@ a {
   }
 }
 @media (max-width: 991.8px) and (min-width: 768px) {
+  .team-content__image-picture {
+    border-radius: 12px 12px 12px 12px;
+  }
   .team__description {
     font-weight: 700;
     font-size: 35px;
