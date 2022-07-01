@@ -689,10 +689,23 @@ a {
   background-color: #b3b3ba;
 }
 .services__page-link {
+  position: relative;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.5);
   font-size: 14px;
+}
+.services__page-link::after {
+  position: absolute;
+  right: -20px;
+  bottom: 2px;
+  width: 15px;
+  height: 12px;
+  content: "";
+  color: rgba(255, 255, 255, 0.5);
+  background-image: url(../img/arrow2.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .services__grid {
   display: grid;
@@ -721,14 +734,33 @@ a {
 }
 .team-content {
   background-color: #f5f5fa;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+.team__item {
+  padding-top: 40px;
 }
 .team__page-link {
+  position: relative;
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
-  letter-spacing: 1px;
   text-transform: uppercase;
   color: #24a3ff;
+}
+.team__page-link::after {
+  position: absolute;
+  right: -20px;
+  bottom: 2px;
+  width: 15px;
+  height: 12px;
+  content: "";
+  background-image: url(../img/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .team__description {
   font-weight: 700;
@@ -745,6 +777,7 @@ a {
   color: #b3b3ba;
   font-size: 18px;
   line-height: 21px;
+  padding-top: 20px;
 }
 @media (min-width: 768px) {
   .page-header::before {

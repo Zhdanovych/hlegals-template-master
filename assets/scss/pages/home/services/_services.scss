@@ -50,12 +50,28 @@
   }
 
   &__page-link {
+    position: relative;
     letter-spacing: 1px;
     text-transform: uppercase;
 
     color: rgba($color-white, 0.5);
 
     font-size: 14px;
+    &::after {
+      position: absolute;
+      right: -20px;
+      bottom: 2px;
+
+      width: 15px;
+      height: 12px;
+
+      content: "";
+      color: rgba($color-white, 0.5);
+
+      background-image: url(../img/arrow2.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
   }
 
   &__grid {
