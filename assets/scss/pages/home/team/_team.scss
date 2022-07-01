@@ -104,12 +104,35 @@
 
   }
   &__name {
+    display: flex;
+    gap: $gap-sm;
     color: $color-gray-text;
     font-size: 18px;
     line-height: 21px;
     padding-top: $gap;
     @include md {
     padding-top: $gap-sm;
+    }
+  }
+  &__name-image {
+    @include sm-min {
+      display: none;
+    }
+  }
+  &__name-descreption {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5px;
+  }
+  &__name-descreption-dekstop {
+    @include sm{
+      display: none;
+    }
+  }
+  &__name-descreption-mobile {
+    @include sm-min {
+      display: none;
     }
   }
 }
