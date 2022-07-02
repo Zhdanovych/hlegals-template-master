@@ -9,12 +9,26 @@
   }
   &__content {
     display: grid;
-    grid-template-columns: 1.5fr 0.5fr 1.5fr 0.4fr 2fr;
+    @include md-min {
+      grid-template-columns: 1.5fr 0.5fr 1.5fr 0.4fr 2fr;
     grid-template-rows: 0.3fr 1fr 1fr;
     grid-template-areas: "item1 item1 item3 item3 item4"
                          "item2 item2 item3 item3 item4"
                          "item5 item6 item6 item7 item7"
                          ;
+
+    }
+    @include md {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "item1"
+                           "item2"
+                           "item3"
+                           "item4"
+                           "item5"
+                           "item6"
+                           "item7"
+    }
   }
   &__item1 {
     @extend %cases-item;
