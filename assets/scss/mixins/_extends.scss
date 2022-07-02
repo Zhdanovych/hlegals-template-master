@@ -7,6 +7,15 @@
   padding-right: $gap;
   padding-left: $gap;
 }
+%cases-item {
+  padding: $gap;
+    background-color: $color-gray-bg;
+    border: 1px solid $color-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    row-gap: $gap;
+}
 
 %text-liner-gradient {
   background: linear-gradient($text-gradient);

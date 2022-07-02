@@ -17,82 +17,41 @@
                          ;
   }
   &__item1 {
+    @extend %cases-item;
     border-radius: 12px 0px 0px 0px;
-    padding: $gap;
-    background-color: $color-gray-bg;
-    border: 1px solid $color-white;
     grid-area: item1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
   }
   &__item2 {
-    padding: $gap;
-    background-color: $color-gray-bg;
-    border: 1px solid $color-white;
+    @extend %cases-item;
     grid-area: item2;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    row-gap: $gap;
     
   }
   &__item3 {
-    padding: $gap;
-    background-color: $color-gray-bg;
-    border: 1px solid $color-white;
+    @extend %cases-item;
     grid-area: item3;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    row-gap: $gap;
     
   }
   &__item4 {
     border-radius: 0px 12px 0px 0px;
-    padding: $gap;
-    background-color: $color-gray-bg;
-    border: 1px solid $color-white;
     grid-area: item4;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    row-gap: $gap;
+    @extend %cases-item;
     
   }
   &__item5 {
-    padding: $gap;
-    background-color: $color-gray-bg;
-    border: 1px solid $color-white;
-    grid-area: item5;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    row-gap: $gap;
+    @extend %cases-item;
     border-radius: 0px 0px 0px 12px;
+    grid-area: item5;
     
   }
   &__item6 {
-    padding: $gap;
-    background-color: $color-gray-bg;
-    border: 1px solid $color-white;
+    @extend %cases-item;
     grid-area: item6;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    row-gap: $gap;
     
   }
   &__item7 {
-    padding: $gap;
-    background-color: $color-gray-bg;
-    border: 1px solid $color-white;
-    grid-area: item7;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    row-gap: $gap;
+    @extend %cases-item;
     border-radius: 0px 0px 12px 0px;
+    grid-area: item7;
     
   }
   &__item-header {
