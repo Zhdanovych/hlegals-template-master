@@ -661,6 +661,17 @@ a {
 .slider__indicator.active {
   opacity: 1;
 }
+.slider__indicator-team {
+  width: 16px;
+  height: 16px;
+  opacity: 0.2;
+  border-radius: 8px;
+  background-color: #24a3ff;
+  cursor: pointer;
+}
+.slider__indicator-team.active {
+  opacity: 1;
+}
 
 .services {
   position: relative;
@@ -838,6 +849,9 @@ a {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+  }
+  .slider__indicator-team {
+    margin-top: 20px;
   }
   .services__title {
     margin-bottom: 60px;
@@ -1047,6 +1061,9 @@ a {
   }
   .actions__socials {
     display: none;
+  }
+  .slider__indicator-team {
+    margin-top: 15px;
   }
   .services {
     padding-bottom: 20px;
