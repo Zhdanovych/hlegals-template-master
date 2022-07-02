@@ -319,7 +319,7 @@ template {
 /* xs */
 /* xx */
 /* ux */
-.team__container, .services__container, .experience__container, .page-header__grid {
+.cases__container, .team__container, .services__container, .experience__container, .page-header__grid {
   max-width: 1360px;
   margin-right: auto;
   margin-left: auto;
@@ -812,6 +812,156 @@ a {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   gap: 5px;
+}
+
+.cases {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.cases__content {
+  display: grid;
+  grid-template-columns: 1.5fr 0.5fr 1.5fr 0.4fr 2fr;
+  grid-template-rows: 0.3fr 1fr 1fr;
+  grid-template-areas: "item1 item1 item3 item3 item4" "item2 item2 item3 item3 item4" "item5 item6 item6 item7 item7";
+}
+.cases__item1 {
+  border-radius: 12px 0px 0px 0px;
+  padding: 20px;
+  background-color: #f5f5fa;
+  border: 1px solid #ffffff;
+  grid-area: item1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.cases__item2 {
+  padding: 20px;
+  background-color: #f5f5fa;
+  border: 1px solid #ffffff;
+  grid-area: item2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  row-gap: 20px;
+}
+.cases__item3 {
+  padding: 20px;
+  background-color: #f5f5fa;
+  border: 1px solid #ffffff;
+  grid-area: item3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  row-gap: 20px;
+}
+.cases__item4 {
+  border-radius: 0px 12px 0px 0px;
+  padding: 20px;
+  background-color: #f5f5fa;
+  border: 1px solid #ffffff;
+  grid-area: item4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  row-gap: 20px;
+}
+.cases__item5 {
+  padding: 20px;
+  background-color: #f5f5fa;
+  border: 1px solid #ffffff;
+  grid-area: item5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  row-gap: 20px;
+  border-radius: 0px 0px 0px 12px;
+}
+.cases__item6 {
+  padding: 20px;
+  background-color: #f5f5fa;
+  border: 1px solid #ffffff;
+  grid-area: item6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  row-gap: 20px;
+}
+.cases__item7 {
+  padding: 20px;
+  background-color: #f5f5fa;
+  border: 1px solid #ffffff;
+  grid-area: item7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  row-gap: 20px;
+  border-radius: 0px 0px 12px 0px;
+}
+.cases__item-header {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #f0145a;
+}
+.cases__item-title {
+  font-size: 24px;
+  line-height: 28px;
+  color: #686887;
+}
+.cases__item-company {
+  font-size: 18px;
+  line-height: 26px;
+  color: #b3b3ba;
 }
 @media (min-width: 768px) {
   .page-header::before {
