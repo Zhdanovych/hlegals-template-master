@@ -20,7 +20,7 @@
     }
     @include md {
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
+      grid-template-rows:  1fr;
       grid-template-areas: "item1"
                            "item2"
                            "item3"
@@ -32,7 +32,13 @@
   }
   &__item1 {
     @extend %cases-item;
-    border-radius: 12px 0px 0px 0px;
+    @include md-min {
+      border-radius: 12px 0px 0px 0px;
+    }
+    @include md {
+      border-radius: 12px 12px 0px 0px;
+
+    }
     grid-area: item1;
   }
   &__item2 {
@@ -46,15 +52,21 @@
     
   }
   &__item4 {
-    border-radius: 0px 12px 0px 0px;
+  
     grid-area: item4;
     @extend %cases-item;
+    @include md-min {
+      border-radius: 0px 12px 0px 0px;
+    }
     
   }
   &__item5 {
     @extend %cases-item;
-    border-radius: 0px 0px 0px 12px;
+
     grid-area: item5;
+    @include md-min {
+      border-radius: 0px 0px 0px 12px;
+    }
     
   }
   &__item6 {
@@ -64,8 +76,14 @@
   }
   &__item7 {
     @extend %cases-item;
-    border-radius: 0px 0px 12px 0px;
     grid-area: item7;
+    @include md-min {
+      border-radius: 0px 0px 12px 0px;
+    }
+    @include md {
+      border-radius: 0px 0px 12px 12px;
+
+    }
     
   }
   &__item-header {

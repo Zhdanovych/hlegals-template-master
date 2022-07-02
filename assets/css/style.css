@@ -839,7 +839,6 @@ a {
   display: grid;
 }
 .cases__item1 {
-  border-radius: 12px 0px 0px 0px;
   grid-area: item1;
 }
 .cases__item2 {
@@ -849,18 +848,15 @@ a {
   grid-area: item3;
 }
 .cases__item4 {
-  border-radius: 0px 12px 0px 0px;
   grid-area: item4;
 }
 .cases__item5 {
-  border-radius: 0px 0px 0px 12px;
   grid-area: item5;
 }
 .cases__item6 {
   grid-area: item6;
 }
 .cases__item7 {
-  border-radius: 0px 0px 12px 0px;
   grid-area: item7;
 }
 .cases__item-header {
@@ -1006,6 +1002,18 @@ a {
     grid-template-rows: 0.3fr 1fr 1fr;
     grid-template-areas: "item1 item1 item3 item3 item4" "item2 item2 item3 item3 item4" "item5 item6 item6 item7 item7";
   }
+  .cases__item1 {
+    border-radius: 12px 0px 0px 0px;
+  }
+  .cases__item4 {
+    border-radius: 0px 12px 0px 0px;
+  }
+  .cases__item5 {
+    border-radius: 0px 0px 0px 12px;
+  }
+  .cases__item7 {
+    border-radius: 0px 0px 12px 0px;
+  }
 }
 @media (min-width: 1280px) {
   .services {
@@ -1090,6 +1098,12 @@ a {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "item1" "item2" "item3" "item4" "item5" "item6" "item7";
+  }
+  .cases__item1 {
+    border-radius: 12px 12px 0px 0px;
+  }
+  .cases__item7 {
+    border-radius: 0px 0px 12px 12px;
   }
 }
 @media (max-width: 991.8px) and (min-width: 768px) {
