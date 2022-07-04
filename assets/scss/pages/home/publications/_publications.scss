@@ -1,0 +1,97 @@
+@use "../../../presets/index" as *;
+@use "../../../mixins/index" as *;
+
+
+.publications {
+  height: 865px;
+  overflow: hidden;
+  padding-top: $gap-lg;
+  padding-bottom: $gap-lg;
+  background-color: $color-gray-bg;
+  &__container {
+    @extend %container;
+  }
+  &__content {
+    @include md-min {
+      column-count: 3;
+    }
+    @include md-xs {
+      column-count: 2;
+    }
+    @include xs {
+      column-count: 1;
+    }
+    
+  }
+  &__item {
+    max-width: 413px;
+    background: $color-white;
+    border-radius: 8px;
+    margin-bottom: $gap-lg;
+    
+  }
+  &__page-link {
+    position: relative;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-active;
+    &::after {
+      position: absolute;
+      right: -20px;
+      bottom: 2px;
+
+      width: 15px;
+      height: 12px;
+
+      content: "";
+
+      background-image: url(../img/publicationsarrow.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 50px;
+    background: linear-gradient($text-gradient2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: $gap-lg;
+  }
+  &__item-title {
+    padding-top: $gap;
+    padding-left: $gap;
+    padding-right: $gap;
+    padding-bottom: $gap-sm;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: $color-active;
+  }
+  &__item-date {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $color-gray-text;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: $gap;
+    border-bottom: 4px solid #E6E6F0;
+  }
+  &__item-descreption {
+    line-height: 22px;
+    color: $color-black;
+    padding: $gap;
+  }
+ 
+  &__item-picture {
+    width: 100%;
+  }
+}
