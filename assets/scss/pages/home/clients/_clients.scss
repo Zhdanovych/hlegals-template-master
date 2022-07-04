@@ -17,9 +17,9 @@
   &__content {
     display: grid;
     line-height: 0.2;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
     @include md-min {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr);
     }
     @include md {
       grid-template-columns: repeat(2, 1fr);
@@ -28,48 +28,82 @@
                            "tapgerine dlook" 
                            "ecoleasing clikky" 
                            "orengear infatek" 
-                           "ltimatecard artprint" 
+                           "ultimatecard artprint" 
                            "citypark addtelligent" ;
     }
   }
-  .hillel-item {
-    grid-area: hillel;
-  }
-  .wannabiz-item {
-    grid-area: wannabiz;
-  }
   
-  .tapgerine-item {
-    grid-area: tapgerine;
-  }
-  .dlook-item {
-    grid-area: dlook;
-  }
-  .orangear-item {
-    grid-area: orengear;
-  }
-  .addtelligent-item {
-    grid-area: addtelligent;
-  }
-  .clikky-item {
-    grid-area: clikky;
-  }
-  .ecoleasing-item {
-    grid-area: ecoleasing;
-  }
-  .infatek-item {
-    grid-area: infatek;
-  }
-  .citypark-item {
-    grid-area: citypark;
-  }
-  .artprint-item {
-    grid-area: artprint;
-  }
-  .ultimatecard-item {
-    grid-area: ultimatecard;
-  }
   &__content-image {
     width: 100%;
+  }
+}
+.hillel-item {
+  @include md {
+    grid-area: hillel;
+  }
+}
+.wannabiz-item {
+  @include md {
+
+    grid-area: wannabiz;
+  }
+}
+
+.tapgerine-item {
+  @include md {
+    grid-area: tapgerine;
+  }
+}
+.dlook-item {
+  @include md {
+
+    grid-area: dlook;
+  }
+}
+.orangear-item {
+  @include md {
+
+    grid-area: orengear;
+  }
+}
+.addtelligent-item {
+  @include md {
+
+    grid-area: addtelligent;
+  }
+}
+.clikky-item {
+  @include md {
+
+    grid-area: clikky;
+  }
+}
+.ecoleasing-item {
+  @include md {
+
+    grid-area: ecoleasing;
+  }
+}
+.infatek-item {
+  @include md {
+
+    grid-area: infatek;
+  }
+}
+.citypark-item {
+  @include md {
+    grid-area: citypark;
+  }
+}
+.artprint-item {
+  @include md {
+
+    grid-area: artprint;
+  }
+}
+.ultimatecard-item {
+  @include md {
+
+    grid-area: ultimatecard;
   }
 }

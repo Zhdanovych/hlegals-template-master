@@ -892,44 +892,6 @@ a {
 .clients__content {
   display: grid;
   line-height: 0.2;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-}
-.clients .hillel-item {
-  grid-area: hillel;
-}
-.clients .wannabiz-item {
-  grid-area: wannabiz;
-}
-.clients .tapgerine-item {
-  grid-area: tapgerine;
-}
-.clients .dlook-item {
-  grid-area: dlook;
-}
-.clients .orangear-item {
-  grid-area: orengear;
-}
-.clients .addtelligent-item {
-  grid-area: addtelligent;
-}
-.clients .clikky-item {
-  grid-area: clikky;
-}
-.clients .ecoleasing-item {
-  grid-area: ecoleasing;
-}
-.clients .infatek-item {
-  grid-area: infatek;
-}
-.clients .citypark-item {
-  grid-area: citypark;
-}
-.clients .artprint-item {
-  grid-area: artprint;
-}
-.clients .ultimatecard-item {
-  grid-area: ultimatecard;
 }
 .clients__content-image {
   width: 100%;
@@ -1072,6 +1034,10 @@ a {
   .cases__item7 {
     border-radius: 0px 0px 12px 0px;
   }
+  .clients__content {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
 }
 @media (min-width: 1280px) {
   .services {
@@ -1166,7 +1132,43 @@ a {
   .clients__content {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "hillel wannabiz" "tapgerine dlook" "ecoleasing clikky" "orengear infatek" "ltimatecard artprint" "citypark addtelligent";
+    grid-template-areas: "hillel wannabiz" "tapgerine dlook" "ecoleasing clikky" "orengear infatek" "ultimatecard artprint" "citypark addtelligent";
+  }
+  .hillel-item {
+    grid-area: hillel;
+  }
+  .wannabiz-item {
+    grid-area: wannabiz;
+  }
+  .tapgerine-item {
+    grid-area: tapgerine;
+  }
+  .dlook-item {
+    grid-area: dlook;
+  }
+  .orangear-item {
+    grid-area: orengear;
+  }
+  .addtelligent-item {
+    grid-area: addtelligent;
+  }
+  .clikky-item {
+    grid-area: clikky;
+  }
+  .ecoleasing-item {
+    grid-area: ecoleasing;
+  }
+  .infatek-item {
+    grid-area: infatek;
+  }
+  .citypark-item {
+    grid-area: citypark;
+  }
+  .artprint-item {
+    grid-area: artprint;
+  }
+  .ultimatecard-item {
+    grid-area: ultimatecard;
   }
 }
 @media (max-width: 991.8px) and (min-width: 768px) {
