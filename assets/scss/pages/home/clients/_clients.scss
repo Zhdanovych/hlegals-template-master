@@ -17,8 +17,8 @@
   &__content {
     display: grid;
     line-height: 0.2;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     @include md-min {
     }
     @include md {
