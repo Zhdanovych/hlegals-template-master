@@ -16,8 +16,58 @@
   }
   &__content {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
     line-height: 0.2;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    @include md-min {
+    }
+    @include md {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      grid-template-areas: "hillel wannabiz" 
+                           "tapgerine dlook" 
+                           "ecoleasing clikky" 
+                           "orengear infatek" 
+                           "ltimatecard artprint" 
+                           "citypark addtelligent" ;
+    }
+  }
+  .hillel-item {
+    grid-area: hillel;
+  }
+  .wannabiz-item {
+    grid-area: wannabiz;
+  }
+  
+  .tapgerine-item {
+    grid-area: tapgerine;
+  }
+  .dlook-item {
+    grid-area: dlook;
+  }
+  .orangear-item {
+    grid-area: orengear;
+  }
+  .addtelligent-item {
+    grid-area: addtelligent;
+  }
+  .clikky-item {
+    grid-area: clikky;
+  }
+  .ecoleasing-item {
+    grid-area: ecoleasing;
+  }
+  .infatek-item {
+    grid-area: infatek;
+  }
+  .citypark-item {
+    grid-area: citypark;
+  }
+  .artprint-item {
+    grid-area: artprint;
+  }
+  .ultimatecard-item {
+    grid-area: ultimatecard;
   }
   &__content-image {
     width: 100%;
