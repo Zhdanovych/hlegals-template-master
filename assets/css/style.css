@@ -876,6 +876,24 @@ a {
   line-height: 26px;
   color: #b3b3ba;
 }
+
+.clients {
+  padding-bottom: 20px;
+}
+.clients__title {
+  padding-bottom: 30px;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323264;
+}
+.clients__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  line-height: 0.2;
+}
 @media (min-width: 768px) {
   .page-header::before {
     content: "";
