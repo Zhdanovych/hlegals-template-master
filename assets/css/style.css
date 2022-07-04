@@ -894,6 +894,9 @@ a {
   grid-template-columns: repeat(4, 1fr);
   line-height: 0.2;
 }
+.clients__content-image {
+  width: 100%;
+}
 @media (min-width: 768px) {
   .page-header::before {
     content: "";
