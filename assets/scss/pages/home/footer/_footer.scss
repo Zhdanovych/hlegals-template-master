@@ -12,28 +12,51 @@
   }
   &__content {
     display: flex;
+    @include md-min {
     justify-content: space-between;
     align-items: flex-start;
     padding-top: $gap-md;
+    padding-bottom: $gap;
+    }
+    @include md {
+      padding-top: $gap;
+      padding-bottom: 100px;
+      flex-direction: column;
+      align-items: center;
+
+    }
   }
   &__wrap {
     display: flex;
-    align-items: center;
-    gap: $gap-md;
+    
     padding-bottom: $gap;
+    @include md-min {
+      align-items: center;
+      gap: $gap-md;
+    }
+    @include md {
+      flex-direction: column;
+      align-items: center;
+      gap: $gap-sm;
+    }
   }
   &__contacts-adress {
-    padding-right: $gap;
+    font-weight: 700;
     color: $color-primary;
+    @include md-min {
+      margin-right: $gap;
+    }
   }
   &__contacts-map {
-    padding-left: $gap;
     color: $color-active;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 1px;
+    @include md-min {
+      margin-left: $gap;
+    }
   }
   &__contacts-phone {
     font-weight: 700;

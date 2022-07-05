@@ -2,6 +2,7 @@
 @use "../../../mixins/index" as *;
 
 .team {
+  margin-top: $gap;
   @include md-min {
     padding-top: $gap-lg;
     padding-bottom: $gap-lg;
