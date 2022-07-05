@@ -1,0 +1,49 @@
+@use "../../../presets/index" as *;
+@use "../../../mixins/index" as *;
+
+.footer {
+  padding-top: $gap;
+  background-color: $color-gray-bg;
+  &__container {
+    @extend %container;
+  }
+  &__separator {
+    border: 4px solid $color-gray-separator;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: $gap-md;
+  }
+  &__wrap {
+    display: flex;
+    align-items: center;
+    gap: $gap-md;
+    padding-bottom: $gap;
+  }
+  &__contacts-adress {
+    padding-right: $gap;
+    color: $color-primary;
+  }
+  &__contacts-map {
+    padding-left: $gap;
+    color: $color-active;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1px;
+  }
+  &__contacts-phone {
+    font-weight: 700;
+    color: $color-primary;
+  }
+  &__contacts-mail {
+    font-weight: 700;
+    color: $color-active;
+  }
+  &__copy {
+    color: $color-gray-text;
+  }
+}

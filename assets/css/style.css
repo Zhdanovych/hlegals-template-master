@@ -319,7 +319,7 @@ template {
 /* xs */
 /* xx */
 /* ux */
-.publications__container, .cases__container, .team__container, .services__container, .experience__container, .page-header__grid {
+.footer__container, .publications__container, .cases__container, .team__container, .services__container, .experience__container, .page-header__grid {
   max-width: 1360px;
   margin-right: auto;
   margin-left: auto;
@@ -980,6 +980,60 @@ a {
   text-align: center;
   color: #ffffff;
   cursor: pointer;
+}
+
+.footer {
+  padding-top: 20px;
+  background-color: #f5f5fa;
+}
+.footer__separator {
+  border: 4px solid #e6e6f0;
+}
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 30px;
+}
+.footer__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  padding-bottom: 20px;
+}
+.footer__contacts-adress {
+  padding-right: 20px;
+  color: #323264;
+}
+.footer__contacts-map {
+  padding-left: 20px;
+  color: #24a3ff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1px;
+}
+.footer__contacts-phone {
+  font-weight: 700;
+  color: #323264;
+}
+.footer__contacts-mail {
+  font-weight: 700;
+  color: #24a3ff;
+}
+.footer__copy {
+  color: #b3b3ba;
 }
 @media (min-width: 576px) {
   .publications {
