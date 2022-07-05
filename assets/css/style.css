@@ -752,7 +752,7 @@ a {
   gap: 10px;
   grid-template-rows: auto auto 1fr;
 }
-.service-item__title {
+.service-item__title > a {
   -ms-flex-item-align: center;
       align-self: center;
   color: #24a3ff;
@@ -1150,7 +1150,7 @@ a {
     width: 92px;
     height: 92px;
   }
-  .service-item__title {
+  .service-item__title > a {
     font-size: 24px;
   }
   .service-item__description {
@@ -1551,7 +1551,7 @@ a {
     width: 65px;
     height: 65px;
   }
-  .service-item__title {
+  .service-item__title > a {
     font-size: 18px;
   }
   .team-content__image {

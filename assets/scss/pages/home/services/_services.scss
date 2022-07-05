@@ -124,7 +124,7 @@
     }
   }
 
-  &__title {
+  &__title > a {
     align-self: center;
 
     color: $color-active;
