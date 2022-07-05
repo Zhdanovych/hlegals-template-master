@@ -997,6 +997,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .footer__wrap {
   display: -webkit-box;
@@ -1222,9 +1225,6 @@ a {
     padding-bottom: 10px;
   }
   .footer__content {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -1403,6 +1403,9 @@ a {
         -ms-flex-align: center;
             align-items: center;
     gap: 10px;
+  }
+  .footer__copy {
+    text-align: center;
   }
 }
 @media (max-width: 991.8px) and (min-width: 576px) {

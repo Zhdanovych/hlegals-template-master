@@ -12,8 +12,8 @@
   }
   &__content {
     display: flex;
-    @include md-min {
     justify-content: space-between;
+    @include md-min {
     align-items: flex-start;
     padding-top: $gap-md;
     padding-bottom: $gap;
@@ -68,5 +68,8 @@
   }
   &__copy {
     color: $color-gray-text;
+    @include md {
+      text-align: center;
+    }
   }
 }
