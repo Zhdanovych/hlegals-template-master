@@ -2,7 +2,6 @@
 @use "../../../mixins/index" as *;
 
 .cases {
-  padding-top: $gap;
   padding-bottom: $gap-md;
   &__container {
     @extend %container;
