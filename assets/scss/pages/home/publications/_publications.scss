@@ -46,7 +46,6 @@
     @include md {
       margin-bottom: $gap;
     }
-    
   }
   &__page-link {
     position: relative;
@@ -168,22 +167,4 @@
     
     display: none;
   }
-}
-.item-order1 {
-  @include xs {
-    order: 1;
-  }
-
-}
-.item-order2 {
-  @include xs {
-    order: 2;
-  }
-
-}
-.item-order3 {
-  @include xs {
-    order: 3;
-  }
-
 }
