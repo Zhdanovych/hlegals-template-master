@@ -41,10 +41,21 @@
     }
   }
   &__contacts-adress {
+    position: relative;
     font-weight: 700;
     color: $color-primary;
     @include md-min {
       margin-right: $gap;
+      &::after {
+        position: absolute;
+        content: "";
+        top: 6px;
+        right: -40px;
+        width: 6px;
+        height: 6px;
+        border-radius: 3px;
+        background-color: $color-gray-text;
+      }
     }
   }
   &__contacts-map {
@@ -58,9 +69,37 @@
       margin-left: $gap;
     }
   }
+  &__contacts-fb {
+    position: relative;
+    @include md-min {
+      &::after {
+        position: absolute;
+        content: "";
+        top: 17px;
+        right: -18px;
+        width: 6px;
+        height: 6px;
+        border-radius: 3px;
+        background-color: $color-gray-text;
+      }
+    }
+  }
   &__contacts-phone {
+    position: relative;
     font-weight: 700;
     color: $color-primary;
+    @include md-min {
+      &::after {
+        position: absolute;
+        content: "";
+        top: 6px;
+        right: -20px;
+        width: 6px;
+        height: 6px;
+        border-radius: 3px;
+        background-color: $color-gray-text;
+      }
+    }
   }
   &__contacts-mail {
     font-weight: 700;

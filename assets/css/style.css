@@ -575,6 +575,7 @@ a {
   gap: 25px;
 }
 .actions__languages {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -590,6 +591,12 @@ a {
 }
 .actions__language-link.active {
   background-color: #f0145a;
+}
+.actions__locations {
+  position: relative;
+}
+.actions__phones {
+  position: relative;
 }
 .actions__phone-link {
   white-space: nowrap;
@@ -1008,6 +1015,7 @@ a {
   padding-bottom: 20px;
 }
 .footer__contacts-adress {
+  position: relative;
   font-weight: 700;
   color: #323264;
 }
@@ -1019,7 +1027,11 @@ a {
   line-height: 14px;
   letter-spacing: 1px;
 }
+.footer__contacts-fb {
+  position: relative;
+}
 .footer__contacts-phone {
+  position: relative;
   font-weight: 700;
   color: #323264;
 }
@@ -1096,6 +1108,36 @@ a {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+  }
+  .actions__languages::after {
+    position: absolute;
+    content: "";
+    top: 10px;
+    right: -13px;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #e6e6f0;
+  }
+  .actions__locations::after {
+    position: absolute;
+    content: "";
+    top: 7px;
+    right: -16px;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #e6e6f0;
+  }
+  .actions__phones::after {
+    position: absolute;
+    content: "";
+    top: 7px;
+    right: -16px;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #e6e6f0;
   }
   .slider__indicator-team {
     margin-top: 20px;
@@ -1240,8 +1282,38 @@ a {
   .footer__contacts-adress {
     margin-right: 20px;
   }
+  .footer__contacts-adress::after {
+    position: absolute;
+    content: "";
+    top: 6px;
+    right: -40px;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #b3b3ba;
+  }
   .footer__contacts-map {
     margin-left: 20px;
+  }
+  .footer__contacts-fb::after {
+    position: absolute;
+    content: "";
+    top: 17px;
+    right: -18px;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #b3b3ba;
+  }
+  .footer__contacts-phone::after {
+    position: absolute;
+    content: "";
+    top: 6px;
+    right: -20px;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #b3b3ba;
   }
 }
 @media (min-width: 1280px) {
