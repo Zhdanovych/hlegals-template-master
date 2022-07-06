@@ -1222,7 +1222,6 @@ h3, h4 > a:hover {
   border-bottom: 4px solid #E6E6F0;
 }
 .help__contacts-adress-link {
-  width: 100%;
   color: #323264;
 }
 .help__contacts-phone {
@@ -1496,7 +1495,7 @@ textarea:focus {
     background-color: #e6e6f0;
   }
   .help__contacts {
-    min-width: 412px;
+    width: 412px;
   }
 }
 
@@ -1955,7 +1954,7 @@ textarea:focus {
             flex-direction: column;
   }
   .help__contacts {
-    min-width: 323px;
+    width: 323px;
   }
 }
 

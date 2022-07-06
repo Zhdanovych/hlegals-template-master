@@ -20,10 +20,10 @@
     font-size: 21px;
     line-height: 30px;
     @include sm-min {
-      min-width: 412px;
+      width: 412px;
     }
     @include sm {
-      min-width: 323px;
+      width: 323px;
     }
    
     
@@ -35,7 +35,6 @@
     border-bottom: 4px solid #E6E6F0;
   }
   &__contacts-adress-link {
-    width: 100%;
     color: $color-primary;
   }
   &__contacts-phone {
