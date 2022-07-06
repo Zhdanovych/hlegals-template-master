@@ -101,9 +101,12 @@
   text-transform: uppercase;
   color: $color-gray-text;
 }
-
-&__button {
+&__buttons {
   margin: 0 auto;
+}
+&__button {
+  @extend %active-button;
+
 }
 }
 input {
