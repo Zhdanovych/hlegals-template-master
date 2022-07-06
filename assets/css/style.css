@@ -1794,6 +1794,9 @@ h3, h4 > a:hover {
   .menu__link-contacts {
     margin: 20px 0;
   }
+  .active__link {
+    width: 60%;
+  }
   .actions {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;

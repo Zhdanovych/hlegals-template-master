@@ -110,4 +110,7 @@
 .active__link {
   color: $color-accent;
   border-bottom: 2px solid $color-accent;
+  @include sm {
+    width: 60%;
+  }
 }
