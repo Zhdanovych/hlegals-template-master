@@ -1,0 +1,54 @@
+@use "../../../presets/index" as *;
+@use "../../../mixins/index" as *;
+
+.help {
+  &__container {
+    @extend %container;
+  }
+  &__contacts {
+    font-size: 21px;
+    line-height: 30px;
+    max-width: 412px;
+    
+  }
+  &__contacts-adress {
+    padding-top: $gap;
+    padding-bottom: 16px;
+    border-bottom: 4px solid #E6E6F0;
+  }
+  &__contacts-adress-link {
+    color: $color-primary;
+  }
+  &__contacts-phone {
+    padding-top: $gap-lg;
+    padding-bottom: $gap;
+  }
+  &__contacts-phone-link {
+    color: $color-primary-alt;
+
+  }
+  &__contacts-email {
+    padding-bottom: $gap-lg;
+    border-bottom: 4px solid #E6E6F0;
+
+  }
+  &__contacts-email-link {
+    color: $color-active;
+
+  }
+  &__contacts-facebook {
+    display: flex;
+    align-items: center;
+    gap: $gap-sm;
+    padding-top: $gap;
+    padding-bottom: $gap;
+  }
+  &__contacts-facebook-link {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $color-active;
+
+  }
+}

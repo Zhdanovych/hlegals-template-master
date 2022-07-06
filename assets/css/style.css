@@ -319,7 +319,7 @@ template {
 /* xs */
 /* xx */
 /* ux */
-.contacts-header__grid, .footer__container, .publications__container, .cases__container, .team__container, .services__container, .experience__container, .page-header__grid {
+.help__container, .contacts-header__grid, .footer__container, .publications__container, .cases__container, .team__container, .services__container, .experience__container, .page-header__grid {
   max-width: 1360px;
   margin-right: auto;
   margin-left: auto;
@@ -1194,6 +1194,52 @@ h3, h4 > a:hover {
   white-space: nowrap;
   font-weight: 700;
   color: #b3b3ba;
+}
+
+.help__contacts {
+  font-size: 21px;
+  line-height: 30px;
+  max-width: 412px;
+}
+.help__contacts-adress {
+  padding-top: 20px;
+  padding-bottom: 16px;
+  border-bottom: 4px solid #E6E6F0;
+}
+.help__contacts-adress-link {
+  color: #323264;
+}
+.help__contacts-phone {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.help__contacts-phone-link {
+  color: #46466e;
+}
+.help__contacts-email {
+  padding-bottom: 40px;
+  border-bottom: 4px solid #E6E6F0;
+}
+.help__contacts-email-link {
+  color: #24a3ff;
+}
+.help__contacts-facebook {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.help__contacts-facebook-link {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24a3ff;
 }
 @media (min-width: 576px) {
   .publications {
