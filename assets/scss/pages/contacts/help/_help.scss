@@ -58,6 +58,7 @@
 
   }
   &__contacts-facebook {
+    
     padding-left: 5px;
     display: flex;
     align-items: center;
@@ -66,6 +67,7 @@
     padding-bottom: $gap;
   }
   &__contacts-facebook-link {
+    font-weight: 700;
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 1px;
@@ -114,7 +116,7 @@ input {
  
 }
 input:focus {
-  border: 2px solid $color-accent;
+  outline: 2px solid $color-accent;
 }
 textarea {
   padding-top: $gap-sm;
@@ -128,5 +130,5 @@ textarea {
   resize: none;
 }
 textarea:focus {
-  border: 2px solid $color-accent;
+  outline: 2px solid $color-accent;
 }

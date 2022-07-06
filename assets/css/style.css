@@ -1012,7 +1012,7 @@ h3, h4 > a:hover {
   background-color: #f5f5fa;
 }
 .footer__separator {
-  border: 4px solid #e6e6f0;
+  border: 2px solid #e6e6f0;
 }
 .footer__content {
   display: -webkit-box;
@@ -1061,6 +1061,7 @@ h3, h4 > a:hover {
   background-color: #ffffff;
 }
 .contacts-header__grid {
+  position: relative;
   display: grid;
   gap: 20px;
   grid-template-columns: auto 1fr;
@@ -1254,6 +1255,7 @@ h3, h4 > a:hover {
   padding-bottom: 20px;
 }
 .help__contacts-facebook-link {
+  font-weight: 700;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 1px;
@@ -1304,7 +1306,7 @@ input {
 }
 
 input:focus {
-  border: 2px solid #f0145a;
+  outline: 2px solid #f0145a;
 }
 
 textarea {
@@ -1320,7 +1322,7 @@ textarea {
 }
 
 textarea:focus {
-  border: 2px solid #f0145a;
+  outline: 2px solid #f0145a;
 }
 
 @media (min-width: 576px) {
@@ -1924,7 +1926,7 @@ textarea:focus {
     width: 170px;
     height: 100vh;
     padding: 20px;
-    background-color: #323264;
+    background-color: #ffffff;
     -webkit-box-shadow: -5px 0 5px rgba(0, 0, 0, 0.5);
             box-shadow: -5px 0 5px rgba(0, 0, 0, 0.5);
   }

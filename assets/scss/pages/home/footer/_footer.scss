@@ -8,7 +8,7 @@
     @extend %container;
   }
   &__separator {
-    border: 4px solid $color-gray-separator;
+    border: 2px solid $color-gray-separator;
   }
   &__content {
     display: flex;
