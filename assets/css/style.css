@@ -1204,18 +1204,17 @@ h3, h4 > a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 40px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 20px;
 }
 .help__contacts {
   font-size: 21px;
   line-height: 30px;
-  width: 412px;
 }
 .help__contacts-adress {
   padding-top: 20px;
@@ -1223,6 +1222,7 @@ h3, h4 > a:hover {
   border-bottom: 4px solid #E6E6F0;
 }
 .help__contacts-adress-link {
+  width: 100%;
   color: #323264;
 }
 .help__contacts-phone {
@@ -1494,6 +1494,9 @@ textarea:focus {
     height: 6px;
     border-radius: 3px;
     background-color: #e6e6f0;
+  }
+  .help__contacts {
+    min-width: 412px;
   }
 }
 
@@ -1944,6 +1947,15 @@ textarea:focus {
   }
   .actions__socials {
     display: none;
+  }
+  .help__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .help__contacts {
+    min-width: 323px;
   }
 }
 

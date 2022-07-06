@@ -9,22 +9,33 @@
   }
   &__content {
     display: flex;
+    gap: $gap-lg;
     justify-content: space-evenly;
     align-items: center;
-    gap: $gap;
+    @include sm {
+  flex-direction: column;
+    }
   }
   &__contacts {
     font-size: 21px;
     line-height: 30px;
-    width: 412px;
+    @include sm-min {
+      min-width: 412px;
+    }
+    @include sm {
+      min-width: 323px;
+    }
+   
     
   }
   &__contacts-adress {
+    
     padding-top: $gap;
     padding-bottom: 16px;
     border-bottom: 4px solid #E6E6F0;
   }
   &__contacts-adress-link {
+    width: 100%;
     color: $color-primary;
   }
   &__contacts-phone {
