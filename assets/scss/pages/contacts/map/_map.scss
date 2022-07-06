@@ -1,0 +1,10 @@
+@use "../../../presets/index" as *;
+@use "../../../mixins/index" as *;
+
+.map {
+  background-color: $color-gray-bg;
+}
+iframe {
+  width: 100%;
+  height: 600px;
+}
