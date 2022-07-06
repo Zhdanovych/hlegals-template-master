@@ -1,0 +1,108 @@
+@use "../../../presets/index" as *;
+@use "../../../mixins/index" as *;
+
+.actions {
+  display: flex;
+  align-items: center;
+
+  gap: 25px;
+  @include sm-min {
+    justify-content: flex-end;
+  }
+  @include sm {
+    justify-content: space-between;
+    a {
+      color: $color-gray-text;
+    }
+  }
+
+  &__languages {
+    position: relative;
+    display: flex;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: 700;
+    gap: 2px;
+    @include sm-min {
+      &::after {
+        position: absolute;
+        content: "";
+        top: 10px;
+        right: -13px;
+        width: 6px;
+        height: 6px;
+        border-radius: 3px;
+        background-color: $color-gray-separator;
+      }
+    }
+  }
+
+  &__language-link {
+    display: block;
+
+    padding: 6px 6px 5px 7px;
+
+    border-radius: 8px;
+    color: $color-gray-text;
+
+    &.active {
+      background-color: $color-accent;
+      color: $color-white;
+    }
+  }
+
+  &__locations {
+    position: relative;
+    
+    @include sm-min {
+      &::after {
+        position: absolute;
+        content: "";
+        top: 7px;
+        right: -16px;
+        width: 6px;
+        height: 6px;
+        border-radius: 3px;
+        background-color: $color-gray-separator;
+      }
+
+    }
+    @include sm {
+      display: none;
+    }
+    
+  }
+  &__location-link {
+    color: $color-gray-text;
+    
+  }
+  &__phones {
+    position: relative;
+    @include sm-min {
+      &::after {
+        position: absolute;
+        content: "";
+        top: 7px;
+        right: -16px;
+        width: 6px;
+        height: 6px;
+        border-radius: 3px;
+        background-color: $color-gray-separator;
+      }
+
+    }
+  }
+
+  &__phone-link {
+    white-space: nowrap;
+
+    font-weight: 700;
+    color: $color-gray-text;
+  }
+
+  &__socials {
+    @include sm {
+      display: none;
+    }
+  }
+}
