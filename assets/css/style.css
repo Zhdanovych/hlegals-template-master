@@ -1096,6 +1096,7 @@ h3, h4 > a:hover {
   height: 30px;
   margin-left: auto;
   cursor: pointer;
+  z-index: 5555;
 }
 .menu__btn-row-dark {
   position: absolute;
