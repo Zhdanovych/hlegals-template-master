@@ -40,15 +40,25 @@
 
     }
     grid-area: item1;
+    &:hover {
+      opacity: 0.8;
+    }
   }
   &__item2 {
     @extend %cases-item;
     grid-area: item2;
+    &:hover {
+      opacity: 0.8;
+    }
     
   }
   &__item3 {
     @extend %cases-item;
     grid-area: item3;
+    &:hover {
+      opacity: 0.8;
+    }
+
     
   }
   &__item4 {
@@ -57,6 +67,9 @@
     @extend %cases-item;
     @include md-min {
       border-radius: 0px 12px 0px 0px;
+    }
+    &:hover {
+      opacity: 0.8;
     }
     
   }
@@ -67,11 +80,17 @@
     @include md-min {
       border-radius: 0px 0px 0px 12px;
     }
+    &:hover {
+      opacity: 0.8;
+    }
     
   }
   &__item6 {
     @extend %cases-item;
     grid-area: item6;
+    &:hover {
+      opacity: 0.8;
+    }
     
   }
   &__item7 {
@@ -83,6 +102,9 @@
     @include md {
       border-radius: 0px 0px 12px 12px;
 
+    }
+    &:hover {
+      opacity: 0.8;
     }
     
   }

@@ -881,23 +881,44 @@ h3, h4 > a:hover {
 .cases__item1 {
   grid-area: item1;
 }
+.cases__item1:hover {
+  opacity: 0.8;
+}
 .cases__item2 {
   grid-area: item2;
+}
+.cases__item2:hover {
+  opacity: 0.8;
 }
 .cases__item3 {
   grid-area: item3;
 }
+.cases__item3:hover {
+  opacity: 0.8;
+}
 .cases__item4 {
   grid-area: item4;
+}
+.cases__item4:hover {
+  opacity: 0.8;
 }
 .cases__item5 {
   grid-area: item5;
 }
+.cases__item5:hover {
+  opacity: 0.8;
+}
 .cases__item6 {
   grid-area: item6;
 }
+.cases__item6:hover {
+  opacity: 0.8;
+}
 .cases__item7 {
   grid-area: item7;
+}
+.cases__item7:hover {
+  opacity: 0.8;
 }
 .cases__item-header {
   font-size: 14px;
