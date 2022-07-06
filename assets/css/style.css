@@ -1196,6 +1196,10 @@ h3, h4 > a:hover {
   color: #b3b3ba;
 }
 
+.help {
+  margin-top: 85px;
+  padding-bottom: 80px;
+}
 .help__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1211,7 +1215,7 @@ h3, h4 > a:hover {
 .help__contacts {
   font-size: 21px;
   line-height: 30px;
-  width: 527px;
+  width: 412px;
 }
 .help__contacts-adress {
   padding-top: 20px;
@@ -1262,7 +1266,7 @@ h3, h4 > a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
-  width: 527px;
+  max-width: 527px;
   padding: 20px;
   background-color: #f5f5fa;
   border-radius: 8px;
@@ -1291,7 +1295,7 @@ h3, h4 > a:hover {
 input {
   border-radius: 8px;
   padding: 10px;
-  width: 487px;
+  width: 100%;
   border: none;
   outline: none;
 }
@@ -1305,7 +1309,7 @@ textarea {
   padding-left: 10px;
   display: block;
   height: 180px;
-  width: 487px;
+  width: 100%;
   outline: none;
   border: none;
   border-radius: 8px;

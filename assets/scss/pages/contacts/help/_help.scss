@@ -2,6 +2,8 @@
 @use "../../../mixins/index" as *;
 
 .help {
+  margin-top: 85px;
+  padding-bottom: 80px;
   &__container {
     @extend %container;
   }
@@ -14,7 +16,7 @@
   &__contacts {
     font-size: 21px;
     line-height: 30px;
-    width: 527px;
+    width: 412px;
     
   }
   &__contacts-adress {
@@ -61,7 +63,7 @@
     display: flex;
     flex-direction: column;
     gap: $gap;
-    width: 527px;
+    max-width: 527px;
     padding: $gap;
     background-color: $color-gray-bg;
     border-radius: 8px;
@@ -91,7 +93,7 @@
 input {
   border-radius: 8px;
   padding: $gap-sm;
-  width: 487px;
+  width: 100%;
   border: none;
   outline: none;
   
@@ -105,7 +107,7 @@ textarea {
   padding-left: $gap-sm;
   display: block;
   height: 180px;
-  width: 487px;
+  width: 100%;
   outline: none;
   border: none;
   border-radius: 8px;
