@@ -19,7 +19,7 @@
       display: none;
     }
 
-    &-row {
+    &-row-dark {
       position: absolute;
       left: 0;
 
@@ -33,7 +33,7 @@
 
       opacity: 1;
       border-radius: 5px;
-      background-color: $color-white;
+      background-color: $color-primary;
 
       &:nth-of-type(1) {
         top: 0;
@@ -98,12 +98,16 @@
     }
   }
 
-  &__link {
+  &__link-contacts {
     display: block;
-    color: $color-gray-text;
+    color: $color-active;
 
     @include sm {
       margin: $gap 0;
     }
   }
+}
+.active__link {
+  color: $color-accent;
+  border-bottom: 2px solid $color-accent;
 }

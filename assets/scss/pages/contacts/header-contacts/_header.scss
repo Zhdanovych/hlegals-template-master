@@ -3,7 +3,7 @@
 
 .contacts-header {
 
-  background-color: $color-black;
+  background-color: $color-white;
 
   &__grid {
     display: grid;
@@ -25,6 +25,8 @@
 
   &__logo {
     grid-area: logo;
+    display: flex;
+    align-items: flex-end;
   }
 
   &__menu {
@@ -33,5 +35,8 @@
 
   &__actions {
     grid-area: actions;
+  }
+  &__logo-image {
+    width: 100%;
   }
 }

@@ -1058,7 +1058,7 @@ h3, h4 > a:hover {
 }
 
 .contacts-header {
-  background-color: #000000;
+  background-color: #ffffff;
 }
 .contacts-header__grid {
   display: grid;
@@ -1067,12 +1067,21 @@ h3, h4 > a:hover {
 }
 .contacts-header__logo {
   grid-area: logo;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .contacts-header__menu {
   grid-area: menu;
 }
 .contacts-header__actions {
   grid-area: actions;
+}
+.contacts-header__logo-image {
+  width: 100%;
 }
 
 .menu {
@@ -1087,7 +1096,7 @@ h3, h4 > a:hover {
   margin-left: auto;
   cursor: pointer;
 }
-.menu__btn-row {
+.menu__btn-row-dark {
   position: absolute;
   left: 0;
   display: block;
@@ -1101,15 +1110,15 @@ h3, h4 > a:hover {
           transform: rotate(0deg);
   opacity: 1;
   border-radius: 5px;
-  background-color: #ffffff;
+  background-color: #323264;
 }
-.menu__btn-row:nth-of-type(1) {
+.menu__btn-row-dark:nth-of-type(1) {
   top: 0;
 }
-.menu__btn-row:nth-of-type(2) {
+.menu__btn-row-dark:nth-of-type(2) {
   top: 12px;
 }
-.menu__btn-row:nth-of-type(3) {
+.menu__btn-row-dark:nth-of-type(3) {
   top: 24px;
 }
 .menu__btn.active span:nth-of-type(1) {
@@ -1133,9 +1142,14 @@ h3, h4 > a:hover {
   padding: 0;
   list-style: none;
 }
-.menu__link {
+.menu__link-contacts {
   display: block;
-  color: #b3b3ba;
+  color: #24a3ff;
+}
+
+.active__link {
+  color: #f0145a;
+  border-bottom: 2px solid #f0145a;
 }
 
 .actions {
@@ -1157,26 +1171,26 @@ h3, h4 > a:hover {
   font-weight: 700;
   gap: 2px;
 }
-.actions__language-link {
+.actions__language-link-contacts {
   display: block;
   padding: 6px 6px 5px 7px;
   border-radius: 8px;
   color: #b3b3ba;
 }
-.actions__language-link.active {
+.actions__language-link-contacts.active {
   background-color: #f0145a;
   color: #ffffff;
 }
 .actions__locations {
   position: relative;
 }
-.actions__location-link {
+.actions__location-link-contacts {
   color: #b3b3ba;
 }
 .actions__phones {
   position: relative;
 }
-.actions__phone-link {
+.actions__phone-link-contacts {
   white-space: nowrap;
   font-weight: 700;
   color: #b3b3ba;
@@ -1777,7 +1791,7 @@ h3, h4 > a:hover {
   .menu__list.active {
     display: block;
   }
-  .menu__link {
+  .menu__link-contacts {
     margin: 20px 0;
   }
   .actions {

@@ -37,7 +37,7 @@
     }
   }
 
-  &__language-link {
+  &__language-link-contacts {
     display: block;
 
     padding: 6px 6px 5px 7px;
@@ -72,7 +72,7 @@
     }
     
   }
-  &__location-link {
+  &__location-link-contacts {
     color: $color-gray-text;
     
   }
@@ -93,7 +93,7 @@
     }
   }
 
-  &__phone-link {
+  &__phone-link-contacts {
     white-space: nowrap;
 
     font-weight: 700;
