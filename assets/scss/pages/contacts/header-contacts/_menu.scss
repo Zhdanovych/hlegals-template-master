@@ -1,7 +1,7 @@
 @use "../../../presets/index" as *;
 @use "../../../mixins/index" as *;
 
-.menu {
+.contacts-menu {
   align-self: center;
 
   font-size: 1.125rem;
@@ -90,7 +90,7 @@
       height: 100vh;
       padding: $gap;
 
-      background-color: $color-primary;
+      background-color: $color-white;
       box-shadow: -5px 0 5px rgba($color-black, 0.5);
 
       &.active {

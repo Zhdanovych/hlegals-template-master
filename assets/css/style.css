@@ -1086,12 +1086,12 @@ h3, h4 > a:hover {
   width: 100%;
 }
 
-.menu {
+.contacts-menu {
   -ms-flex-item-align: center;
       align-self: center;
   font-size: 1.125rem;
 }
-.menu__btn {
+.contacts-menu__btn {
   position: relative;
   width: 40px;
   height: 30px;
@@ -1099,7 +1099,7 @@ h3, h4 > a:hover {
   cursor: pointer;
   z-index: 5555;
 }
-.menu__btn-row-dark {
+.contacts-menu__btn-row-dark {
   position: absolute;
   left: 0;
   display: block;
@@ -1115,37 +1115,37 @@ h3, h4 > a:hover {
   border-radius: 5px;
   background-color: #323264;
 }
-.menu__btn-row-dark:nth-of-type(1) {
+.contacts-menu__btn-row-dark:nth-of-type(1) {
   top: 0;
 }
-.menu__btn-row-dark:nth-of-type(2) {
+.contacts-menu__btn-row-dark:nth-of-type(2) {
   top: 12px;
 }
-.menu__btn-row-dark:nth-of-type(3) {
+.contacts-menu__btn-row-dark:nth-of-type(3) {
   top: 24px;
 }
-.menu__btn.active span:nth-of-type(1) {
+.contacts-menu__btn.active span:nth-of-type(1) {
   top: 12px;
   -webkit-transform: rotate(135deg);
       -ms-transform: rotate(135deg);
           transform: rotate(135deg);
 }
-.menu__btn.active span:nth-of-type(2) {
+.contacts-menu__btn.active span:nth-of-type(2) {
   left: -40px;
   opacity: 0;
 }
-.menu__btn.active span:nth-of-type(3) {
+.contacts-menu__btn.active span:nth-of-type(3) {
   top: 12px;
   -webkit-transform: rotate(-135deg);
       -ms-transform: rotate(-135deg);
           transform: rotate(-135deg);
 }
-.menu__list {
+.contacts-menu__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.menu__link-contacts {
+.contacts-menu__link-contacts {
   display: block;
   color: #24a3ff;
 }
@@ -1460,10 +1460,10 @@ iframe {
     padding-top: 50px;
     grid-template-areas: "logo actions" "logo menu";
   }
-  .menu__btn {
+  .contacts-menu__btn {
     display: none;
   }
-  .menu__list {
+  .contacts-menu__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1928,7 +1928,7 @@ iframe {
     padding-top: 20px;
     grid-template-areas: "actions actions" "logo menu";
   }
-  .menu__list {
+  .contacts-menu__list {
     position: absolute;
     top: 0;
     right: -170px;
@@ -1936,14 +1936,14 @@ iframe {
     width: 170px;
     height: 100vh;
     padding: 20px;
-    background-color: #323264;
+    background-color: #ffffff;
     -webkit-box-shadow: -5px 0 5px rgba(0, 0, 0, 0.5);
             box-shadow: -5px 0 5px rgba(0, 0, 0, 0.5);
   }
-  .menu__list.active {
+  .contacts-menu__list.active {
     display: block;
   }
-  .menu__link-contacts {
+  .contacts-menu__link-contacts {
     margin: 20px 0;
   }
   .active__link {
