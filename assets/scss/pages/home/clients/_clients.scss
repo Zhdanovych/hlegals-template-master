@@ -30,6 +30,11 @@
                            "ultimatecard artprint" 
                            "citypark addtelligent" ;
     }
+    &-item {
+      &:hover {
+        opacity: 0.8;
+      }
+    }
   }
   
   &__content-image {

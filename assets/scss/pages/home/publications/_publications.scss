@@ -46,6 +46,10 @@
     @include md {
       margin-bottom: $gap;
     }
+    &:hover {
+      transition: 0.8s;
+      box-shadow: 10px 5px 5px $color-active;
+    }
   }
   &__page-link {
     position: relative;

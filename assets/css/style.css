@@ -951,6 +951,9 @@ h3, h4 > a:hover {
   display: grid;
   line-height: 0.2;
 }
+.clients__content-item:hover {
+  opacity: 0.8;
+}
 .clients__content-image {
   width: 100%;
 }
@@ -965,6 +968,13 @@ h3, h4 > a:hover {
 .publications__item {
   background: #ffffff;
   border-radius: 8px;
+}
+.publications__item:hover {
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+  -webkit-box-shadow: 10px 5px 5px #24a3ff;
+          box-shadow: 10px 5px 5px #24a3ff;
 }
 .publications__page-link {
   position: relative;
