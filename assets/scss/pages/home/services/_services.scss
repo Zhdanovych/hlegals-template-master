@@ -115,6 +115,7 @@
 
   &__image {
     @include sm-min {
+      align-items: center;
       width: 92px;
       height: 92px;
     }

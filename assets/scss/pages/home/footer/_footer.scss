@@ -42,7 +42,7 @@
   }
   &__contacts-adress {
     position: relative;
-    font-weight: 700;
+    font-weight: 500;
     color: $color-primary;
     @include md-min {
       margin-right: $gap;
@@ -86,7 +86,7 @@
   }
   &__contacts-phone {
     position: relative;
-    font-weight: 700;
+    font-weight: 500;
     color: $color-primary;
     @include md-min {
       &::after {
