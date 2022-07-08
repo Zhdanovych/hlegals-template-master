@@ -1176,7 +1176,7 @@ h3, h4 > a:hover {
   padding: 0;
   list-style: none;
 }
-.contacts-menu__link-contacts {
+.contacts-menu__link {
   display: block;
   color: #24a3ff;
 }
@@ -1985,7 +1985,7 @@ iframe {
   .contacts-menu__list.active {
     display: block;
   }
-  .contacts-menu__link-contacts {
+  .contacts-menu__link {
     margin: 20px 0;
   }
   .active__link {

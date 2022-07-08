@@ -6,7 +6,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="ie=edge" http-equiv="X-UA-Compatible">
   <title>Contacts</title>
-  <link href="assets/css/style.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/img/favicon.svg" rel="icon">
 </head>
 
@@ -16,21 +16,21 @@
     <div class="contacts-header__grid">
       <div class="contacts-header__logo">
         <a href="index.html"><img alt="Site logo" class="contacts-header__logo-image"
-            src="assets/img/logo-menu-contacts.svg"></a>
+            src="assets/img/logomenucontacts.svg"></a>
 
       </div>
-      <nav class="contacts-header__menu menu">
+      <nav class="contacts-header__menu contacts-menu">
         <div class="contacts-menu__btn">
           <span class="contacts-menu__btn-row-dark"></span>
           <span class="contacts-menu__btn-row-dark"></span>
           <span class="contacts-menu__btn-row-dark"></span>
         </div>
         <ul class="contacts-menu__list">
-          <li class="contacts-menu__item"><a class="contacts-menu__link-contacts" href="">про нас</a></li>
-          <li class="contacts-menu__item"><a class="contacts-menu__link-contacts" href="">послуги</a></li>
-          <li class="contacts-menu__item"><a class="contacts-menu__link-contacts" href="">команда</a></li>
-          <li class="contacts-menu__item"><a class="contacts-menu__link-contacts" href="">публікації</a></li>
-          <li class="contacts-menu__item"><a class="contacts-menu__link-contacts active__link" href="">контакти</a></li>
+          <li class="contacts-menu__item"><a class="contacts-menu__link" href="">про нас</a></li>
+          <li class="contacts-menu__item"><a class="contacts-menu__link" href="">послуги</a></li>
+          <li class="contacts-menu__item"><a class="contacts-menu__link" href="">команда</a></li>
+          <li class="contacts-menu__item"><a class="contacts-menu__link" href="">публікації</a></li>
+          <li class="contacts-menu__item"><a class="contacts-menu__link active__link" href="">контакти</a></li>
         </ul>
       </nav>
       <nav class="contacts-header__actions actions">
@@ -74,19 +74,19 @@
             </div>
 
           </div>
-          <form class="help__form" action="#" method="post">
+          <form class="help__form form" action="#" method="post">
             <h2 class="form__title">Ми хотіли б Вам допомогти</h2>
-            <div>
+            <div class="form__name">
               <input type="text" name="name" placeholder="Iм’я">
             </div>
-            <div>
-              <textarea class="form__message" name="message" placeholder="Повідомлення"></textarea>
+            <div class="form__message">
+              <textarea name="message" placeholder="Повідомлення"></textarea>
             </div>
             <h3 class="form__title-secondary">Як вам відповісти?</h3>
-            <div>
+            <div class="form__message">
               <input type="tel" name="phone" placeholder="Номер телефона">
             </div>
-            <div>
+            <div class="form__email">
               <input type="email" name="email" placeholder="Чи email">
             </div>
             <div class="form__buttons">
