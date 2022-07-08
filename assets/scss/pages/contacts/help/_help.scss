@@ -7,8 +7,8 @@
     padding-bottom: 80px;
   }
   @include sm {
-    margin-top: 25px;
-    padding-bottom: 40px;
+    margin-top: $gap-md;
+    padding-bottom: $gap-lg;
   }
 
   &__container {
