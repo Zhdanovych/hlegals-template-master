@@ -105,4 +105,11 @@
       display: none;
     }
   }
+  &__social-link-facebook {
+    color: $color-gray-text;
+    &:hover {
+      transition: 1s;
+      color: $color-accent;
+    }
+  }
 }

@@ -1076,6 +1076,15 @@ h3, h4 > a:hover {
 .footer__contacts-fb {
   position: relative;
 }
+.footer__contacts-fb-img {
+  color: #24a3ff;
+}
+.footer__contacts-fb-img:hover {
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  color: #f0145a;
+}
 .footer__contacts-phone {
   position: relative;
   font-weight: 500;
@@ -1228,6 +1237,15 @@ h3, h4 > a:hover {
   white-space: nowrap;
   font-weight: 700;
   color: #b3b3ba;
+}
+.actions__social-link-facebook {
+  color: #b3b3ba;
+}
+.actions__social-link-facebook:hover {
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  color: #f0145a;
 }
 .help__content {
   display: -webkit-box;

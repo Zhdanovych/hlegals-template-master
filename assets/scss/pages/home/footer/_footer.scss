@@ -83,6 +83,13 @@
         background-color: $color-gray-text;
       }
     }
+    &-img {
+      color: $color-active;
+      &:hover {
+        transition: 1s;
+        color: $color-accent;
+      }
+    }
   }
   &__contacts-phone {
     position: relative;
