@@ -131,6 +131,9 @@
     color: $color-active;
 
     font-weight: 500;
+    &:hover {
+      color: $color-accent;
+    }
 
     @include sm-min {
       font-size: 24px;

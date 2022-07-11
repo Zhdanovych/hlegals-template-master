@@ -787,6 +787,9 @@ h3, h4 > a:hover {
   color: #24a3ff;
   font-weight: 500;
 }
+.service-item__title > a:hover {
+  color: #f0145a;
+}
 .service-item__description {
   color: #ffffff;
   line-height: 1.44;
